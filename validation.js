@@ -1,7 +1,7 @@
 var emailInput = document.getElementById('email')
 emailInput.addEventListener("keyup", function () { ValidateEmail(emailInput) })
 
-document.getElementById('email').maxLength = 25
+document.getElementById('email').maxLength = 50
 
 function ValidateEmail(emailInput) {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)) {
